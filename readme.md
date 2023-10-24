@@ -41,31 +41,31 @@ Aggiungere il **ciclo infinito** del carosello. Ovvero se è attiva la prima imm
 
 1. Al click della freccia sotto: 
 
-    Creo un ciclo for al cui interno inserisco:
     
-    SE i < lunghezza array - 1 
+    SE indice immagine corrente < lunghezza array - 1 
 
             Togliere la classe "active" da elemento corrente 
             Incremento i
             Aggiungere classe "active" al nuovo elemento
-    ALTRIMENTI 
 
-            Imposto i = 0
+    ALTRIMENTI SE indice immagine corrente === lunghezza array - 1 
 
-    Chiudo il ciclo
+            Togliere la classe "active" da elemento corrente
+            Imposto indice = 0
+            Aggiungere classe "active" al nuovo elemento
+
 
 2. AL click della freccia sopra:
 
-    Creo un ciclo for al cui interno inserisco:
 
-    SE i > 0 
+    SE indice immagine corrente > 0 
 
             Togliere la classe "active" da elemento corrente
             Decremento i 
             Aggiungo  classe "active" al nuovo elemento
     
-    ALTRIMENTI 
-    
-            Imposto i = lunghezza array - 1
+    ALTRIMENTI SE  immagine corrente === 0
 
-    Chiudo il ciclo
+            Togliere la classe "active" da elemento corrente
+            Imposto indice = lunghezza array - 1
+            Aggiungo  classe "active" al nuovo elemento 
